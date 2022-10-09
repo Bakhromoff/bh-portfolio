@@ -6,29 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/normalize.css ">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css "> -->
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="site-header">
     <div class="container site-header__container">
-      <a class="logo site-header__logo" href="#">BH</a>
+      <a class="logo site-header__logo" href="#">
+        <img class="logo__img" src="img/logo.jpg" alt="logo-image">
+      </a>
       <nav class="sitenav site-header__nav">
         <ul class="sitenav__list">
           <li class="sitenav__item">
             <a class="sitenav__link" href="#">Bosh sahifa</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Men haqimda</a>
-          </li>
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#">Loyihalar</a>
+            <a class="sitenav__link" href="https://app.netlify.com/teams/bakhromoff">Loyihalar</a>
           </li>
         </ul>
       </nav>
       <a class="button site-header__button" href="#">Bog'lanish</a>
+      <button class="dark-mode-button" type="button">
+        <span class="button-inner">
+          <svg class="darkmode-button-icon" width="18" height="17"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z" fill="#fff" stroke=currentColor stroke-width="1.25"/></svg>
+          <span class="button-text">Night Mode</span>
+        </span>
+        </button>
     </div>
   </header>
 
@@ -38,25 +44,36 @@
     <div class="container hero__container">
       <div class="hero__content">
         <h2 class="hero__heading">Hotamtoy Bahromov</h2>
-        <div class="profession">Frontend Dasturchi</div>
+        <div class="profession">Fullstack dasturchi</div>
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://t.me/...">
+            <a class="socials__link socials__link--telegram"  href="https://t.me/bahromov9007">
               <i class="fa-brands fa-telegram"></i>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.facebook.com/hotamtoy.bahromov.1">
+            <a class="socials__link socials__link--facebook"  href="https://www.facebook.com/hotamtoy.bahromov.1">
               <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.instagram.com/bahromovhotamtoy/">
+            <a class="socials__link socials__link--instagram"  href="https://www.instagram.com/bahromovhotamtoy/">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
         </ul>
-        <a class="button" href="#">Bog'lanish</a>
+
+        <div class="profile">
+          <ul class="profile__list">
+            <li class="profile__item profile__item--netlify">
+              <a class="profile__link profile__link--netlify"  href="https://app.netlify.com/teams/bakhromoff"><img src="img/netlify.svg" alt="Netlify" width="30" height="30">Netlify</a>
+            </li>
+            <li class="profile__item">
+              <a class="profile__link"  href="https://github.com/Bakhromoff"><i class="fa-brands fa-github"></i> Git Hub</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
       <img class="hero__img" src="img/myphoto.jpg" alt="my photo" srcset="img/myphoto.jpg 1x, img/myphoto@2x.jpg 2x" width="350" height="350">
     </div>
@@ -69,7 +86,7 @@
 
     <section class="projects">
       <div class="container">
-        <h2 class="projects__heading">Loyihalar</h2>
+        <h2 class="projects__heading">Frontend bo'yicha loyihalar</h2>
         <ul class="projects__list">
           <li class="projects__item">
             <div class="item-project">
@@ -77,13 +94,13 @@
               <h3 class="item-project__title">Easy Bank</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-easybank"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-easybank"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-easybank.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-easybank.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://teletype.in/@hotamtoy/easybank">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="https://teletype.in/@hotamtoy/easybank">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -94,13 +111,13 @@
               <h3 class="item-project__title">Bookmark</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-bookmark"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-bookmark"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-bookmark.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-bookmark.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -111,13 +128,13 @@
               <h3 class="item-project__title">Pricing Component</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-pricing-component"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-pricing-component"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-pricing-component.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-pricing-component.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -128,13 +145,13 @@
               <h3 class="item-project__title">Skilled Elarning</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-skilled-elearning"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-skilled-elearning"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-skilled-elearning.netlify.app/"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-skilled-elearning.netlify.app/"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -145,13 +162,13 @@
               <h3 class="item-project__title">Loop studios</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-loopstudios"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-loopstudios"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-loopstudios.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-loopstudios.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -162,13 +179,13 @@
               <h3 class="item-project__title">Rest Countries</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-restcountries"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-restcountries"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-restcountries.netlify.app/"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-restcountries.netlify.app/"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -179,13 +196,13 @@
               <h3 class="item-project__title">Job Listings</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-joblistings"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-joblistings"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-joblistings.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-joblistings.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -196,13 +213,13 @@
               <h3 class="item-project__title">Shortly</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-shortly"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-shortly"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-shortly.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-shortly.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -213,13 +230,13 @@
               <h3 class="item-project__title">Apple Watch</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-applewatch"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-applewatch"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-applewatch.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-applewatch.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -230,13 +247,13 @@
               <h3 class="item-project__title">Namanganliklar 24</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-namanganliklar24"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-namanganliklar24"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-namanganliklar24.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-namanganliklar24.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -247,13 +264,13 @@
               <h3 class="item-project__title">CoffeeRoasters</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-coffeeroasters"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-coffeeroasters"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-coffeeroasters.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-coffeeroasters.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
@@ -264,27 +281,66 @@
               <h3 class="item-project__title">AkademNashr</h3>
               <ul class="item-project__list">
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://github.com/Bakhromoff/bh-akademnashr"><i class="fa-brands fa-github"></i> Git Hub</a>
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/bh-akademnashr"><i class="fa-brands fa-github"></i> Git Hub</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="https://bh-akademnashr.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
+                  <a class="item-project__link"  href="https://bh-akademnashr.netlify.app"><i class="fa-solid fa-globe"></i> Netlify</a>
                 </li>
                 <li class="item-project__item">
-                  <a class="item-project__link" target="_blank" href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="item-project__link"  href="#">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
+
+        <h2 class="projects__heading">Backend bo'yicha loyihalar</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <div class="item-project">
+              <div class="img-wrapper"><img class="item-project__img" src="img/login.jpg" alt="easybank" srcset="img/login.jpg 1x, img/login@2x.jpg 2x" width="340" height="200"></div>
+              <h3 class="item-project__title">Login/Registration form</h3>
+              <ul class="item-project__list">
+                <li class="item-project__item">
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/php_login-form-exercise"><i class="fa-brands fa-github"></i> Git Hub</a>
+                </li>
+
+                <li class="item-project__item">
+                  <a class="item-project__link"  href="https://teletype.in/@hotamtoy/easybank">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="projects__item">
+            <div class="item-project">
+              <div class="img-wrapper"><img class="item-project__img" src="img/gallery.jpg" alt="easybank" srcset="img/gallery.jpg 1x, img/gallery@2x.jpg 2x" width="340" height="200"></div>
+              <h3 class="item-project__title">Gallery/Upload image</h3>
+              <ul class="item-project__list">
+                <li class="item-project__item">
+                  <a class="item-project__link"  href="https://github.com/Bakhromoff/database-upload-images"><i class="fa-brands fa-github"></i> Git Hub</a>
+                </li>
+
+                <li class="item-project__item">
+                  <a class="item-project__link"  href="https://teletype.in/@hotamtoy/easybank">Batafsil <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
       </div>
     </section>
+    <!-- END PROJECTS SECTION -->
   </main>
   <footer class="site-footer">
     <div class="container site-footer__container">
-      <a class="logo site-footer__logo" href="#">BH</a>
+      <a class="logo site-footer__logo" href="#">
+        <img class="logo__img" src="img/logo.jpg" alt="logo-image">
+      </a>
       <span class="user-phone">Tel:  +998913979007</span>
       <span class="eamail">Email:  hotamtoy9007@mail.com</span>
-      <a class="button site-footer__button" href="#">Bog'lanish</a>
+      <a class="button site-footer__button" href="">Bog'lanish</a>
     </div>
   </footer>
   <script src="js/main.js"></script>
